@@ -18,11 +18,7 @@ const main = async() => {
             case 2: 
                 const allTasks = taskRepository.getAllTask();
                 console.log(allTasks);                
-                break;
-            case 0:
-                option = 'X';
-                return option;
-                break;
+                break;            
             
         };
 

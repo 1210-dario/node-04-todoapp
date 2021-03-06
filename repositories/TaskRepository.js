@@ -28,7 +28,8 @@ class TaskRepository {
     */
     createTask(title){
         const task = new Task(title);
-        this._tasks.push(task);        
+        this._tasks.push(task);
+        saveData(this._tasks);        
     }
 
     deleteTask(){
