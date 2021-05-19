@@ -1,11 +1,11 @@
 //Alta y Baja de modificacion de Tareas
 const { v4: uuidv4 } = require('uuid');
-
+//Defini la Clase Tarea(Task), las Clases empizan con Mayuscula.Este es el Modelo Tarea que voy a utilizar para la database y repositories.
 class Task{
 
     id = '';
     title = '';
-    done = false;
+    done = null;
     created = null;
     finished = null;
     

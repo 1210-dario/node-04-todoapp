@@ -13,7 +13,17 @@ const createTask = (title) => {
     taskRepository.createTask(title);
 }
 
+const completeTask = (title) => {
+    taskRepository.completeTask(title);
+}
+
+const deleteTask = (title)=>{   
+    taskRepository.deleteTask(title);
+}
+
 module.exports = {
     getAllTask,
-    createTask
+    createTask,
+    completeTask,
+    deleteTask
 }

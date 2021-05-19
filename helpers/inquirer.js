@@ -12,6 +12,7 @@ const inquirerMenu = async() =>{
             type: 'list',
             name: 'option',
             message: 'What do you want to do?',
+            //Aca definimos las opciones del menu, leer docu de inquirer
             choices:[
                 {
                     value: 1,
@@ -20,6 +21,14 @@ const inquirerMenu = async() =>{
                 {
                     value: 2,
                     name: `${'2-'.blue} Get Tasks`
+                },
+                {
+                    value: 3,
+                    name: `${'3-'.blue} Complete Task`
+                },
+                {
+                    value: 4,
+                    name: `${'4-'.blue} Delete Task`
                 },
                 {
                     value: 'X',
